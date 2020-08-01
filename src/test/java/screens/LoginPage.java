@@ -18,6 +18,9 @@ public class LoginPage extends AbstractObjectScreen {
     @AndroidFindBy(xpath = "//android.widget.TextView[@text=' MASUK ']/..")
     protected AndroidElement masukButton;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Lupa Password?']/..")
+    protected AndroidElement LupaPasswordButton;
+
     @AndroidFindBy(xpath = "//android.widget.Toast[1]")
     protected AndroidElement toastMsg;
 
@@ -40,5 +43,9 @@ public class LoginPage extends AbstractObjectScreen {
 
     public void validateToastMsg(String msg){
         Assert.assertEquals("Pesan toast message tidak sesuai",msg,toastMsg.getText());
+    }
+
+    public void klikLupaPassword(){
+        LupaPasswordButton.click();
     }
 }

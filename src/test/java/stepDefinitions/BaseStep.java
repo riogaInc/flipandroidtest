@@ -2,10 +2,7 @@ package stepDefinitions;
 
 import cucumber.api.Scenario;
 import io.appium.java_client.android.AndroidDriver;
-import screens.BerandaPage;
-import screens.LoginPage;
-import screens.OnboardingPage;
-import screens.RegisterPage;
+import screens.*;
 import utils.ThreadLocalDriver;
 
 public class BaseStep {
@@ -17,4 +14,5 @@ public class BaseStep {
     RegisterPage registerPage = new RegisterPage(driver);
     LoginPage loginPage = new LoginPage(driver);
     BerandaPage berandaPage = new BerandaPage(driver);
+    LupaPasswordPage lupaPasswordPage = new LupaPasswordPage(driver);
 }

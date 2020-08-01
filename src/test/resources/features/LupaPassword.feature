@@ -1,6 +1,6 @@
 Feature: Lupa Password
 
-@dev
+
 Scenario: Normal Scenario - Lupa password dengan email
   Given aplikasi flip berhasil dibuka di android
   When user mengklik tombol MASUK di halaman onboarding
@@ -9,7 +9,7 @@ Scenario: Normal Scenario - Lupa password dengan email
   And user mengklik tombol RESET PASSWORD di halaman lupa password
   Then notifikasi pup up "Silakan cek email kamu untuk melihat instruksi lebih lanjut" di halaman lupa password
 
-  @dev
+
 Scenario Outline: Negative Scenario - Lupa password dengan email
   Given aplikasi flip berhasil dibuka di android
   When user mengklik tombol MASUK di halaman onboarding
@@ -20,6 +20,6 @@ Scenario Outline: Negative Scenario - Lupa password dengan email
   Examples:
   |email|
   |a    |
-#  |a@   |
-#  |a@c  |
-#  |q@c.c|
+  |a@   |
+  |a@c  |
+  |q@c.c|
