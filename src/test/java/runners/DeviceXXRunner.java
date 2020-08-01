@@ -11,7 +11,7 @@ import utils.BaseAppium;
 
 @CucumberOptions(
         features = "src/test/resources/features/",
-        tags = "@dev",
+        tags = "~@dev",
         glue = "stepDefinitions",
         plugin = {
                 "pretty",
