@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Device01">
+        <parameter name="UDID_" value="3201e4a1b60a1633"/>
+        <parameter name="appPackage_" value="id.flip"/>
+        <parameter name="appActivity_" value="id.flip.MainActivity"/>
+        <parameter name="deviceName_" value="3201e4a1b60a1633"/>
+        <parameter name="androidVersion_" value="10"/>
+        <classes>
+            <class name="runners.DeviceXXRunner"/>
+        </classes>
+    </test>
+</suite>
