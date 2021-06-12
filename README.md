@@ -26,3 +26,4 @@ You can run scrip by using maven command "mvn clean verify"
 
 1. Satrio Ajie Wijaya
 
+![alt text](https://github.com/riogaInc/flipandroidtest/blob/master/img.jpg?png=true)
